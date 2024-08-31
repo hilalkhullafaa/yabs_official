@@ -8,7 +8,30 @@
     <link rel="stylesheet" href="assets/css/style.css" />
 
     <!-- FAVICON -->
-    <link rel="icon" href="assets/images/logo-yabs.png" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/logo-yabs.png"
+      type="image/svg+xml" />
+
+    <!-- PRELOAD IMAGES -->
+    <link rel="preload" href="assets/images/yabs-hero.png" ass="image" />
+    <link rel="preload" href="assets/images/yabs-hero1.png" ass="image" />
+    <link
+      rel="preload"
+      href="assets/images/profile-hero-banner.png"
+      ass="image" />
+    <link
+      rel="preload"
+      href="assets/images/struktur-hero-banner.png"
+      ass="image" />
+    <link
+      rel="preload"
+      href="assets/images/program-hero-banner.png"
+      ass="image" />
+    <link
+      rel="preload"
+      href="assets/images/gallery-hero-banner.png"
+      ass="image" />
 
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -28,7 +51,13 @@
     <!-- AOS CSS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
+
   <body>
+    <!-- PRELOADER -->
+    <div class="preloader">
+      <div class="circle"></div>
+    </div>
+
     <!-- HEADER SECTION START -->
     <header class="header">
       <div class="container">
@@ -86,16 +115,10 @@
     <section class="hero">
       <div class="slider-hero">
         <div class="slide">
-          <img
-            src="./assets/images/yabs-hero.png"
-            alt="yabs-hero-banner-1"
-            loading="lazy" />
+          <img src="./assets/images/yabs-hero.png" alt="yabs-hero-banner-1" />
         </div>
         <div class="slide">
-          <img
-            src="./assets/images/yabs-hero1.png"
-            alt="yabs-hero-banner-1"
-            loading="lazy" />
+          <img src="./assets/images/yabs-hero1.png" alt="yabs-hero-banner-1" />
         </div>
       </div>
     </section>
@@ -155,10 +178,7 @@
         <h2 class="h2">Sekilas <span class="span">Yayasan</span></h2>
         <div class="profile-container">
           <figure class="profile-banner">
-            <img
-              src="assets/images/profile-yabs.png"
-              alt="profile yabs"
-              loading="lazy" />
+            <img src="assets/images/profile-yabs.png" alt="profile yabs" />
           </figure>
           <div class="profile-content">
             <h3 class="h3">Yayasan Al-Madaniy Budi Santosa</h3>
@@ -195,7 +215,6 @@
               src="https://www.youtube.com/embed/M5tE2swSTgc?si=YFjH2RBbLg-FwQl6"
               title="YouTube video player"
               frameborder="0"
-              loading="lazy"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerpolicy="strict-origin-when-cross-origin"
               allowfullscreen></iframe>
@@ -206,7 +225,6 @@
               src="https://www.youtube.com/embed/Hax9O4qH1f8?si=DH5wKfwqdhZvpy4l"
               title="YouTube video player"
               frameborder="0"
-              loading="lazy"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerpolicy="strict-origin-when-cross-origin"
               allowfullscreen></iframe>
@@ -217,7 +235,6 @@
               src="https://www.youtube.com/embed/ngBeedgLLGM?si=3_l5jcsuOdBWlIIR"
               title="YouTube video player"
               frameborder="0"
-              loading="lazy"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerpolicy="strict-origin-when-cross-origin"
               allowfullscreen></iframe>
@@ -228,7 +245,6 @@
               src="https://www.youtube.com/embed/VVbhFGxfaRw?si=1uPPOSzZnRsuaAni"
               title="YouTube video player"
               frameborder="0"
-              loading="lazy"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerpolicy="strict-origin-when-cross-origin"
               allowfullscreen></iframe>
@@ -239,7 +255,7 @@
     <!-- GALLERY SECTION END -->
 
     <!-- QUOTES SECTION START -->
-    <section class="quotes" loading="lazy">
+    <section class="quotes">
       <div class="quotes-content">
         <h1 class="h1">Mari Berjuang Bersama Kami</h1>
         <p class="quotes-arab">

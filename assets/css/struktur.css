@@ -52,7 +52,22 @@ body {
   font-size: var(--fs-16);
   font-family: var(--ff-poppins);
   border: none;
-  height: 300vh;
+}
+
+body.active {
+  overflow: visible;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-green);
 }
 
 a,
@@ -96,7 +111,6 @@ button {
   color: var(--color-bg);
   width: max-content;
   padding: 8px 16px;
-  /* height: 35px; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -185,6 +199,63 @@ button {
 
 .h4-title {
   font-size: var(--fs-18);
+}
+
+/*  
+=====> PRELOADER <=====
+*/
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--color-green);
+  z-index: 1000;
+  display: grid;
+  place-items: center;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+}
+
+.preloader.active {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.preloader .circle {
+  width: 50px;
+  height: 50px;
+  border: 4px solid white;
+  border-top: transparent;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  animation: rotate360 1s ease infinite;
+  -webkit-animation: rotate360 1s ease infinite;
+}
+
+@keyframes rotate360 {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
 }
 
 /*
@@ -760,8 +831,11 @@ button {
     align-items: unset;
     justify-content: unset;
     overflow-x: scroll;
-    gap: 15px;
-    scroll-snap-type: mandatory;
+    gap: 10px;
+  }
+
+  .struktur-content::-webkit-scrollbar {
+    height: 10px;
   }
 
   /*
