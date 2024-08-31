@@ -409,6 +409,7 @@ button {
   border-right: 4px solid var(--color-green);
   border-bottom: 4px solid var(--color-green);
   text-align: center;
+  margin-bottom: 15px;
 }
 
 .struktur-content .struktur-item .content-img {
