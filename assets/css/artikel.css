@@ -340,10 +340,82 @@ button {
 }
 
 /* 
-=====> ARTIKEL SECTION <=====
+=====> ARTIKEL FIRST SECTION <=====
 */
-.artikel .artikel-content {
+.artikel-image-first {
+  height: 300px;
+}
+
+.artikel-image-first img {
+  object-fit: cover;
+}
+
+.artikel .artikel-content-first {
   padding-block: 30px 50px;
+}
+
+/*  
+=====> ARTIKEL LAINNYA SECTION <=====
+*/
+.artikel {
+  padding-bottom: 60px;
+}
+
+.artikel .artikel-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.artikel-content .artikel-box {
+  background-color: white;
+  width: 300px;
+  padding: 15px 10px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-left: 6px solid var(--color-green);
+  margin-bottom: 15px;
+}
+
+.artikel-box .artikel-img {
+  height: 180px;
+  overflow: hidden;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.artikel-img img {
+  height: 180px;
+  transition: 0.3s ease-out;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  -webkit-transition: 0.3s ease-out;
+  -moz-transition: 0.3s ease-out;
+  -ms-transition: 0.3s ease-out;
+  -o-transition: 0.3s ease-out;
+}
+
+.artikel-box:hover img {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+
+.artikel-box .artikel-text {
+  margin-block: 15px;
 }
 
 /*  

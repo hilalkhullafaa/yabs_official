@@ -440,6 +440,7 @@ button {
 /*  
 =====> ARTIKEL SECTION <=====
 */
+
 .artikel {
   padding-bottom: 60px;
 }
@@ -466,6 +467,7 @@ button {
 }
 
 .artikel-box .artikel-img {
+  height: 180px;
   overflow: hidden;
   border-radius: 6px;
   -webkit-border-radius: 6px;
@@ -475,6 +477,7 @@ button {
 }
 
 .artikel-img img {
+  height: 180px;
   transition: 0.3s ease-out;
   border-radius: 6px;
   -webkit-border-radius: 6px;
