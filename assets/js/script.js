@@ -34,3 +34,9 @@ openNav.addEventListener("click", () => {
 closeNav.addEventListener("click", () => {
   navbar.classList.remove("active");
 });
+
+document.addEventListener("scroll", () => {
+  if (scrollY > 100) {
+    navbar.classList.remove("active");
+  }
+});
