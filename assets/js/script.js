@@ -8,6 +8,26 @@ window.addEventListener("load", () => {
   document.body.classList.add("active");
 });
 
+// AUDIO
+document.addEventListener("DOMContentLoaded", function () {
+  const play = document.getElementById("play");
+  const stop = document.getElementById("stop");
+  const audioPlayer = document.getElementById("audioPlayer");
+
+  play.addEventListener("click", function () {
+    audioPlayer.play();
+    play.style.display = "none";
+    stop.style.display = "block";
+  });
+
+  stop.addEventListener("click", function () {
+    audioPlayer.pause();
+    stop.style.display = "none";
+    play.style.display = "block";
+  });
+});
+
+audio.addEventListener("click", playMusic);
 // HERO SLIDER
 // OTOMATIS SLIDE
 const sliderHero = document.querySelector(".slider-hero");

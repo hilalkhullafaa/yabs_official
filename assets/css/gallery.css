@@ -258,6 +258,42 @@ button {
   }
 }
 
+/* 
+ =====> AUDIO <=====
+*/
+.player-music {
+  position: fixed;
+  top: 90%;
+  right: 25px;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  width: 24px;
+  height: 24px;
+  padding: 24px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.player-music i {
+  color: var(--color-green);
+  font-size: 20px;
+}
+
+.player-music #stop {
+  display: none;
+}
+
+.player-music #play {
+  margin-left: 4px;
+}
+
 /*
     =====> HEADER SECTION <=====  
     */
@@ -382,8 +418,77 @@ button {
 }
 
 /*
-  =====> GALLERY SECTION <=====  
+  =====> GALLERY FOTO SECTION <=====  
   */
+.gallery-foto .gallery-foto-list {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(auto-fit, 320px);
+  justify-content: center;
+}
+
+.foto-item {
+  border-radius: 6px;
+  overflow: hidden;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.foto-banner:hover img {
+  transition: 0.2s ease-in;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -webkit-transition: 0.2s ease-in;
+  -moz-transition: 0.2s ease-in;
+  -ms-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+}
+
+.foto-banner {
+  height: 210px;
+  position: relative;
+  overflow: hidden;
+}
+
+.foto-banner figcaption {
+  position: absolute;
+  width: max-content;
+  text-align: center;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  background-color: var(--color-green);
+  padding: 6px 12px;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.foto-banner img {
+  transition: 0.2s ease-out;
+  object-fit: cover;
+  background-position: center;
+  -webkit-transition: 0.2s ease-out;
+  -moz-transition: 0.2s ease-out;
+  -ms-transition: 0.2s ease-out;
+  -o-transition: 0.2s ease-out;
+}
+
+/* 
+=====> GALLERY YOUTUBE SECTION <===== 
+*/
 .gallery {
   padding-bottom: 60px;
 }
@@ -758,22 +863,6 @@ button {
     font-size: var(--fs-18);
     font-weight: var(--fw-500);
     color: var(--color-green);
-  }
-
-  /*  
-    =====> GALLERY SECTION <=====
-      */
-
-  .struktur-content::-webkit-scrollbar {
-    height: 10px;
-  }
-
-  .struktur-content::-webkit-scrollbar-thumb {
-    border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
   }
 
   /*

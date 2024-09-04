@@ -65,6 +65,13 @@
       <div class="circle"></div>
     </div>
 
+    <!-- AUDIO -->
+    <button class="player-music">
+      <audio src="audio.mp3" id="audioPlayer"></audio>
+      <i class="fa-solid fa-play" id="play"></i>
+      <i class="fa-solid fa-pause" id="stop"></i>
+    </button>
+
     <!-- HEADER SECTION START -->
     <header class="header">
       <div class="container">
@@ -108,7 +115,9 @@
             >
           </li>
           <li class="navbar-item">
-            <a href="#" class="button-primary">KONTAK</a>
+            <a href="https://wa.me//+6285559794734" class="button-primary"
+              >KONTAK</a
+            >
           </li>
         </nav>
         <button class="btn-toggle open-btn">
@@ -172,57 +181,46 @@
     <!-- FEATURED SECTION END -->
 
     <!-- PROFILE SECTION START -->
-    <section class="section profile">
+    <section class="section tentang">
       <div class="container">
         <h2 class="h2">Tentang <span class="span">Yayasan</span></h2>
-        <div class="profile-container">
-          <figure class="image" data-ckbox-resource-id="YcG7HBBdCgXF">
-            <picture>
-              <source
-                srcset="
-                  https://ckbox.cloud/ff721556c21cd209f6e5/assets/YcG7HBBdCgXF/images/128.webp   128w,
-                  https://ckbox.cloud/ff721556c21cd209f6e5/assets/YcG7HBBdCgXF/images/256.webp   256w,
-                  https://ckbox.cloud/ff721556c21cd209f6e5/assets/YcG7HBBdCgXF/images/384.webp   384w,
-                  https://ckbox.cloud/ff721556c21cd209f6e5/assets/YcG7HBBdCgXF/images/512.webp   512w,
-                  https://ckbox.cloud/ff721556c21cd209f6e5/assets/YcG7HBBdCgXF/images/640.webp   640w,
-                  https://ckbox.cloud/ff721556c21cd209f6e5/assets/YcG7HBBdCgXF/images/768.webp   768w,
-                  https://ckbox.cloud/ff721556c21cd209f6e5/assets/YcG7HBBdCgXF/images/896.webp   896w,
-                  https://ckbox.cloud/ff721556c21cd209f6e5/assets/YcG7HBBdCgXF/images/1024.webp 1024w,
-                  https://ckbox.cloud/ff721556c21cd209f6e5/assets/YcG7HBBdCgXF/images/1152.webp 1152w,
-                  https://ckbox.cloud/ff721556c21cd209f6e5/assets/YcG7HBBdCgXF/images/1280.webp 1280w
-                "
-                type="image/webp"
-                sizes="(max-width: 1280px) 100vw, 1280px" />
-              <img
-                src="https://ckbox.cloud/ff721556c21cd209f6e5/assets/YcG7HBBdCgXF/images/1280.jpeg"
-                width="1280"
-                height="963" />
-            </picture>
+
+        <div class="tentang-banner">
+          <figure class="img-banner">
+            <img
+              src="./assets/images/logo-tentang-kami.jpg"
+              alt="tentang yabs" />
           </figure>
-          <h4 style="text-align: center">Yayasan Al-Madaniy Budi Santosa</h4>
-          <p>
-            Yayasan ini berdiri pada 12-Nov-2021 berkedudukan dan berkantor
-            pusat di Kabupaten Cianjur Jalan Mariwati KM 8, Kampung Joglo, RT
-            001/RW 005, Desa Cibadak, Kecamatan Sukaresmi.
-          </p>
-          <p>
-            yayasan dapat membuka kantor cabang atau perwakilan di tempat lain,
-            baik di dalam maupun luar wilayah Republik Indonesia berdasarkan
-            keputusan pengurus dengan persetujuan pembina.
-          </p>
-          <p style="text-align: center"><strong>VISI YAYASAN</strong></p>
-          <p style="text-align: center">
-            Yayasan berfokus pada bidang Sosial, Keagamaan, dan Kemanusiaan.
-            Yang dimana hal ini sangat penting bagi kesejahteraan Masyarakat.
-          </p>
-          <p style="text-align: center"><strong>MISI YAYASAN</strong></p>
-          <p>
-            Untuk mencapai Misi atau Tujuan tersebut diatas, Yayasan menjalankan
-            kegiatan sebagai berikut :
-          </p>
-          <ol>
+          <article class="article">
+            <h4>Yayasan Al-Madaniy Budi Santosa</h4>
+            <p>
+              Yayasan ini berdiri pada 12-Nov-2021 berkedudukan dan berkantor
+              pusat di Kabupaten Cianjur Jalan Mariwati KM 8, Kampung Joglo, RT
+              001/RW 005, Desa Cibadak, Kecamatan Sukaresmi. yayasan dapat
+              membuka kantor cabang atau perwakilan di tempat lain, baik di
+              dalam maupun luar wilayah Republik Indonesia berdasarkan keputusan
+              pengurus dengan persetujuan pembina.
+            </p>
+
+            <br />
+            <br />
+            <h5>--VISI YAYASAN --</h5>
+            <br />
+            <p>
+              Yayasan berfokus pada bidang Sosial, Keagamaan dan Kemanusiaan,
+              Yang dimana hal ini sangat penting bagi kesejahteraan Masyarakat.
+            </p>
+
+            <br />
+            <h5>-- MISI YAYASAN --</h5>
+            <br />
+            <p>
+              Untuk Mencapai Misi atau Tujuan tersebut diatas, Yayasan
+              menjalankan kegiatan sebagai berikut :
+            </p>
+            <br />
             <li>
-              <p>1. Di bidang Sosial :</p>
+              1. Di bidang Sosial :
               <p>
                 a. Menyelenggarakan pendidikan umum dari Tingkat Taman
                 Kanak-Kanak, Pendidikan Pra Sekolah, Penndidikan Dasar,
@@ -230,25 +228,25 @@
                 Program Doktoral, Penelitian dibidang Ilmu Pengetahuan, dan
                 menyelanggarakan kursus-kursus/pendidikan.
               </p>
-              <p>b. Lembaga nonformal.</p>
-              <p>c. Panti Asuhan, Panti Jompo, dan Panti Wreda.</p>
+              <p>b. Lembaga nonformail.</p>
+              <p>c. Panti Asuhan, Panti Jompo, dan panti Wreda.</p>
               <p>d. Beasiswa Pendidikan.</p>
               <p>e. Santunan untuk warga yang sakit.</p>
               <p>f. Santunan Kematian</p>
-              <p>&nbsp;</p>
             </li>
+            <br />
             <li>
-              <p>2. Di bidang Keagamaan :</p>
+              2. Di bidang Keagamaan :
               <p>a. Mendirikan sarana ibadah.</p>
               <p>b. Menyelenggarakan pondok pesantren.</p>
               <p>c. Menerima dan menyalurkan zakat, infaq dan sedekah.</p>
-              <p>d. Melaksanakan Syiar Keagaam.</p>
+              <p>d. Melaksanakan Syiar Keagamaan.</p>
               <p>e. Santunan Anak Yatim atau Piatu.</p>
-              <p>&nbsp;</p>
             </li>
+            <br />
             <li>
-              <p>3. Di bidang Kemanusiaan :</p>
-              <p>a. Memberi bantuan kepada korban bencana alam.</p>
+              3. Di bidang Kemanusiaan :
+              <p>a. Memberi bantuan Kepada korban bencana alam.</p>
               <p>b. Memberikan bantuan kepada pengungsi yang membutuhkan.</p>
               <p>
                 c. Memberi bantuan kepada tuna wisma, fakir miskin, dan
@@ -259,90 +257,32 @@
               </p>
               <p>e. Melestarikan lingkungan hidup.</p>
             </li>
-          </ol>
-          <h5 style="text-align: center">LEGALITAS</h5>
-          <figure
-            class="image image_resized"
-            style="width: 100%"
-            data-ckbox-resource-id="SgvALK47rS8U">
-            <picture>
-              <source
-                srcset="
-                  https://ckbox.cloud/5ea6d06efaeb2e6d1603/assets/SgvALK47rS8U/images/215.webp   215w,
-                  https://ckbox.cloud/5ea6d06efaeb2e6d1603/assets/SgvALK47rS8U/images/430.webp   430w,
-                  https://ckbox.cloud/5ea6d06efaeb2e6d1603/assets/SgvALK47rS8U/images/645.webp   645w,
-                  https://ckbox.cloud/5ea6d06efaeb2e6d1603/assets/SgvALK47rS8U/images/860.webp   860w,
-                  https://ckbox.cloud/5ea6d06efaeb2e6d1603/assets/SgvALK47rS8U/images/1075.webp 1075w,
-                  https://ckbox.cloud/5ea6d06efaeb2e6d1603/assets/SgvALK47rS8U/images/1290.webp 1290w,
-                  https://ckbox.cloud/5ea6d06efaeb2e6d1603/assets/SgvALK47rS8U/images/1505.webp 1505w,
-                  https://ckbox.cloud/5ea6d06efaeb2e6d1603/assets/SgvALK47rS8U/images/1720.webp 1720w,
-                  https://ckbox.cloud/5ea6d06efaeb2e6d1603/assets/SgvALK47rS8U/images/1935.webp 1935w,
-                  https://ckbox.cloud/5ea6d06efaeb2e6d1603/assets/SgvALK47rS8U/images/2145.webp 2145w
-                "
-                type="image/webp"
-                sizes="(max-width: 2145px) 100vw, 2145px" />
-              <img
-                src="https://ckbox.cloud/5ea6d06efaeb2e6d1603/assets/SgvALK47rS8U/images/2145.jpeg"
-                width="2145"
-                height="3564" />
-            </picture>
-          </figure>
-          <figure
-            class="image image_resized"
-            style="width: 100%"
-            data-ckbox-resource-id="YYlsv3kJnitR">
-            <picture>
-              <source
-                srcset="
-                  https://ckbox.cloud/5ea6d06efaeb2e6d1603/assets/YYlsv3kJnitR/images/264.webp   264w,
-                  https://ckbox.cloud/5ea6d06efaeb2e6d1603/assets/YYlsv3kJnitR/images/528.webp   528w,
-                  https://ckbox.cloud/5ea6d06efaeb2e6d1603/assets/YYlsv3kJnitR/images/792.webp   792w,
-                  https://ckbox.cloud/5ea6d06efaeb2e6d1603/assets/YYlsv3kJnitR/images/1056.webp 1056w,
-                  https://ckbox.cloud/5ea6d06efaeb2e6d1603/assets/YYlsv3kJnitR/images/1320.webp 1320w,
-                  https://ckbox.cloud/5ea6d06efaeb2e6d1603/assets/YYlsv3kJnitR/images/1584.webp 1584w,
-                  https://ckbox.cloud/5ea6d06efaeb2e6d1603/assets/YYlsv3kJnitR/images/1848.webp 1848w,
-                  https://ckbox.cloud/5ea6d06efaeb2e6d1603/assets/YYlsv3kJnitR/images/2112.webp 2112w,
-                  https://ckbox.cloud/5ea6d06efaeb2e6d1603/assets/YYlsv3kJnitR/images/2376.webp 2376w,
-                  https://ckbox.cloud/5ea6d06efaeb2e6d1603/assets/YYlsv3kJnitR/images/2639.webp 2639w
-                "
-                type="image/webp"
-                sizes="(max-width: 2639px) 100vw, 2639px" />
-              <img
-                src="https://ckbox.cloud/5ea6d06efaeb2e6d1603/assets/YYlsv3kJnitR/images/2639.jpeg"
-                width="2639"
-                height="3636" />
-            </picture>
-          </figure>
-          <figure
-            class="image image_resized"
-            style="width: 100%"
-            data-ckbox-resource-id="psfn5_tGIbEU">
-            <picture>
-              <source
-                srcset="
-                  https://ckbox.cloud/5ea6d06efaeb2e6d1603/assets/psfn5_tGIbEU/images/231.webp   231w,
-                  https://ckbox.cloud/5ea6d06efaeb2e6d1603/assets/psfn5_tGIbEU/images/462.webp   462w,
-                  https://ckbox.cloud/5ea6d06efaeb2e6d1603/assets/psfn5_tGIbEU/images/693.webp   693w,
-                  https://ckbox.cloud/5ea6d06efaeb2e6d1603/assets/psfn5_tGIbEU/images/924.webp   924w,
-                  https://ckbox.cloud/5ea6d06efaeb2e6d1603/assets/psfn5_tGIbEU/images/1155.webp 1155w,
-                  https://ckbox.cloud/5ea6d06efaeb2e6d1603/assets/psfn5_tGIbEU/images/1386.webp 1386w,
-                  https://ckbox.cloud/5ea6d06efaeb2e6d1603/assets/psfn5_tGIbEU/images/1617.webp 1617w,
-                  https://ckbox.cloud/5ea6d06efaeb2e6d1603/assets/psfn5_tGIbEU/images/1848.webp 1848w,
-                  https://ckbox.cloud/5ea6d06efaeb2e6d1603/assets/psfn5_tGIbEU/images/2079.webp 2079w,
-                  https://ckbox.cloud/5ea6d06efaeb2e6d1603/assets/psfn5_tGIbEU/images/2301.webp 2301w
-                "
-                type="image/webp"
-                sizes="(max-width: 2301px) 100vw, 2301px" />
-              <img
-                src="https://ckbox.cloud/5ea6d06efaeb2e6d1603/assets/psfn5_tGIbEU/images/2301.jpeg"
-                width="2301"
-                height="3630" />
-            </picture>
-          </figure>
+          </article>
         </div>
       </div>
     </section>
     <!-- PROFILE SECTION END -->
+
+    <!-- PROFILE SECTION LEGAL START -->
+    <div class="section legal">
+      <div class="container">
+        <h2 class="h2">Legalitas <span class="span">Yayasan</span></h2>
+        <ul class="legal-content">
+          <li class="legal-img">
+            <img src="./assets/images/legalitas1.jpg" alt="legalitas1" />
+          </li>
+
+          <li class="legal-img">
+            <img src="./assets/images/legalitas2.jpg" alt="legalitas2" />
+          </li>
+
+          <li class="legal-img">
+            <img src="./assets/images/legalitas3.jpg" alt="legalitas3" />
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- PROFILE SECTION LEGAL END  -->
 
     <!-- ARTIKEL SECTION START -->
     <section class="section artikel">
@@ -446,11 +386,11 @@
 
           <div class="footer-menu">
             <h4 class="h4">Corporate</h4>
-            <a href="">BERANDA</a>
-            <a href="">PROFILE</a>
-            <a href="">STRUKTUR</a>
-            <a href="">PROGRAM</a>
-            <a href="">GALLERY</a>
+            <a href="index.html">BERANDA</a>
+            <a href="tentang.html">PROFILE</a>
+            <a href="struktur.html">STRUKTUR</a>
+            <a href="program.html">PROGRAM</a>
+            <a href="gallery.html">GALLERY</a>
           </div>
 
           <div class="footer-sosmed">
