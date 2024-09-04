@@ -27,7 +27,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-audio.addEventListener("click", playMusic);
 // HERO SLIDER
 // OTOMATIS SLIDE
 const sliderHero = document.querySelector(".slider-hero");
