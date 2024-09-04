@@ -10,20 +10,45 @@ window.addEventListener("load", () => {
 
 // AUDIO
 document.addEventListener("DOMContentLoaded", function () {
-  const play = document.getElementById("play");
-  const stop = document.getElementById("stop");
-  const audioPlayer = document.getElementById("audioPlayer");
+  const audio = document.getElementById("audio");
+  const playButton = document.getElementById("play-button");
+  let play = document.getElementById("play");
+  let stop = document.getElementById("stop");
 
-  play.addEventListener("click", function () {
-    audioPlayer.play();
-    play.style.display = "none";
-    stop.style.display = "block";
+  // Memeriksa dan memuat status audio dari localStorage
+  if (localStorage.getItem("audioTime")) {
+    audio.currentTime = localStorage.getItem("audioTime");
+  }
+  if (localStorage.getItem("isPlaying") === "true") {
+    audio.play();
+    playButton.textContent = "Pause";
+  } else {
+    audio.pause();
+    playButton.textContent = "Play";
+  }
+
+  // Menyimpan status audio saat waktu atau status berubah
+  audio.addEventListener("timeupdate", function () {
+    localStorage.setItem("audioTime", audio.currentTime);
   });
 
-  stop.addEventListener("click", function () {
-    audioPlayer.pause();
-    stop.style.display = "none";
-    play.style.display = "block";
+  audio.addEventListener("play", function () {
+    localStorage.setItem("isPlaying", true);
+    playButton.textContent = "Pause";
+  });
+
+  audio.addEventListener("pause", function () {
+    localStorage.setItem("isPlaying", false);
+    playButton.textContent = "Play";
+  });
+
+  // Mengatur tombol Play/Pause
+  playButton.addEventListener("click", function () {
+    if (audio.paused) {
+      audio.play();
+    } else {
+      audio.pause();
+    }
   });
 });
 

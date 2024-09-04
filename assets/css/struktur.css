@@ -212,8 +212,10 @@ button {
   height: 100vh;
   background-color: var(--color-green);
   z-index: 1000;
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
   transition: 0.3s ease;
   -webkit-transition: 0.3s ease;
   -moz-transition: 0.3s ease;
@@ -238,6 +240,11 @@ button {
   -o-border-radius: 50%;
   animation: rotate360 1s ease infinite;
   -webkit-animation: rotate360 1s ease infinite;
+}
+
+.preloader .text-preloader {
+  color: white;
+  font-size: 18px;
 }
 
 @keyframes rotate360 {
@@ -265,8 +272,8 @@ button {
   position: fixed;
   top: 90%;
   right: 25px;
-  background-color: rgba(0, 0, 0, 0.1);
-  z-index: 999;
+  background-color: var(--color-green);
+  z-index: 9;
   width: 24px;
   height: 24px;
   padding: 24px;
@@ -281,19 +288,10 @@ button {
   align-items: center;
 }
 
-.player-music i {
-  color: var(--color-green);
-  font-size: 20px;
+.player-music button {
+  color: white;
+  cursor: pointer;
 }
-
-.player-music #stop {
-  display: none;
-}
-
-.player-music #play {
-  margin-left: 4px;
-}
-
 /*
   =====> HEADER SECTION <=====  
   */

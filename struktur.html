@@ -62,14 +62,17 @@
     <!-- PRELOADER -->
     <div class="preloader">
       <div class="circle"></div>
+      <div class="text-preloader">Sabar yaa 😊</div>
     </div>
 
     <!-- AUDIO -->
-    <button class="player-music">
-      <audio src="audio.mp3" id="audioPlayer"></audio>
-      <i class="fa-solid fa-play" id="play"></i>
-      <i class="fa-solid fa-pause" id="stop"></i>
-    </button>
+    <div class="player-music">
+      <audio id="audio" autoplay loop>
+        <source src="audio.mp3" type="audio/mp3" />
+        Your browser does not support the audio element.
+      </audio>
+      <button id="play-button">play</button>
+    </div>
 
     <!-- HEADER SECTION START -->
     <header class="header">
