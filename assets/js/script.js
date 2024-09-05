@@ -12,8 +12,6 @@ window.addEventListener("load", () => {
 document.addEventListener("DOMContentLoaded", function () {
   const audio = document.getElementById("audio");
   const playButton = document.getElementById("play-button");
-  let play = document.getElementById("play");
-  let stop = document.getElementById("stop");
 
   // Memeriksa dan memuat status audio dari localStorage
   if (localStorage.getItem("audioTime")) {
